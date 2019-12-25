@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"myproject/concurrency"
 	"myproject/employee"
+	"myproject/shape"
 
 	"golang.org/x/crypto/bcrypt"
 )
@@ -17,4 +19,8 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(`hashed password:`, bs)
+	concurrency.GetEnvironment()
+
+	c := shape.Circle{Radius: 5}
+	fmt.Println(c.Area())
 }
