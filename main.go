@@ -19,8 +19,12 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(`hashed password:`, bs)
-	concurrency.GetEnvironment()
 
 	c := shape.Circle{Radius: 5}
 	fmt.Println(c.Area())
+	concurrency.GetEnvironment()
+	concurrency.Channel()
+	concurrency.DirectionalChannel()
+	concurrency.RangeChannel()
+	concurrency.SelectChannel()
 }
