@@ -22,3 +22,7 @@ func TestMySum(t *testing.T) {
 		}
 	}
 }
+
+func ExamplemySum() {
+	mySum(1, 2)
+}
