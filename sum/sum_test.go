@@ -23,6 +23,7 @@ func TestMySum(t *testing.T) {
 	}
 }
 
+// https://godoc.org/github.com/rabelais88/go-docker/sum 이 주소에서 내용 확인 가능
 func ExampleMySum() {
 	MySum(1, 2)
 }
