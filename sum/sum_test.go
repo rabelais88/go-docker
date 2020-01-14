@@ -16,13 +16,13 @@ func TestMySum(t *testing.T) {
 	}
 
 	for _, v := range tests {
-		_answer := mySum(v.data...)
+		_answer := MySum(v.data...)
 		if _answer != v.answer {
 			t.Error(`expect`, v.answer, `got`, _answer)
 		}
 	}
 }
 
-func ExamplemySum() {
-	mySum(1, 2)
+func ExampleMySum() {
+	MySum(1, 2)
 }
