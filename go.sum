@@ -1,3 +1,5 @@
+github.com/rabelais88/fib v0.0.0-20200115133714-3e0184395342 h1:rF100RN0kbPLDUWPs0zUb0QRjbHhgPm4ddwKoEcE6HI=
+github.com/rabelais88/fib v0.0.0-20200115133714-3e0184395342/go.mod h1:Uut8ITKIcFVlb7Q96iBk2GtPI7/t+jxIxUDl7abPj6E=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20191219195013-becbf705a915 h1:aJ0ex187qoXrJHPo8ZasVTASQB7llQP6YeNzgDALPRk=
 golang.org/x/crypto v0.0.0-20191219195013-becbf705a915/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=

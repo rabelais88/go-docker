@@ -6,6 +6,7 @@ import (
 	"myproject/employee"
 	"myproject/shape"
 
+	"github.com/rabelais88/fib"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -27,4 +28,5 @@ func main() {
 	concurrency.DirectionalChannel()
 	concurrency.RangeChannel()
 	concurrency.SelectChannel()
+	fmt.Println(`fibonacci of 3`, fib.Fibonacci(3))
 }
