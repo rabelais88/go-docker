@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"myproject/concurrency"
 	"myproject/employee"
+	"myproject/myfile"
 	"myproject/shape"
+	"sync"
 
 	"github.com/rabelais88/fib"
 	"golang.org/x/crypto/bcrypt"
@@ -29,4 +31,12 @@ func main() {
 	concurrency.RangeChannel()
 	concurrency.SelectChannel()
 	fmt.Println(`fibonacci of 3`, fib.Fibonacci(3))
+
+	var wg sync.WaitGroup
+	wg.Add(1)
+	go func() { // asynchronous file writing
+		myfile.Str(`testing`).SaveString(`testfile`)
+		wg.Done()
+	}()
+	wg.Wait()
 }
