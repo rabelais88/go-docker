@@ -1,10 +1,15 @@
 package concurrency
 
-import "fmt"
+import (
+	"myproject/log"
+)
 
-func logger(arg ...interface{}) {
-	fmt.Println(`channel:`, arg)
-}
+var _logger log.Logger = `concurrency/channel`
+var logger = _logger.Print
+
+// func logger(arg ...interface{}) {
+// 	fmt.Println(`channel:`, arg)
+// }
 
 func Channel() {
 	c := make(chan int, 1)      // can access, put value inside
